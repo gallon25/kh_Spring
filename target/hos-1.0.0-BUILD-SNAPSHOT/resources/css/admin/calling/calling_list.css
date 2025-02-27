@@ -1,0 +1,55 @@
+@charset "UTF-8";
+
+/* 큰 틀 */
+#container {
+	width: 1000px;
+	height: 800px;
+	margin: 70px auto;
+	position: relative;
+}
+
+#container p {
+	font-size: 30px;
+	font-weight: bold;
+}
+
+#calling_div table {
+	border-collapse: collapse;
+	width: 1000px;
+	height: 350px;
+	position: absolute;
+	top: 120px;
+	text-align: center;
+	table-layout: fixed;
+}
+
+#calling_div table tr:first-child {
+	border-bottom: 1px solid black;
+}
+
+#calling_div table th {
+	border-top: 2px solid black;
+    padding: 10px;      /* 여백 균등하게 조정 */
+}
+
+#calling_div table td {
+	border-bottom: 1px solid gray;
+	padding: 20px;
+}
+
+/* 제목 a태그 */
+#calling_div a {
+	text-decoration: none;
+	color: black;
+}
+
+.buttons {
+	background: #3086C9;
+	border: none;
+	color: white;
+	height: 50px;
+	width: 70px;
+	font-size: 14px;
+	cursor: pointer;
+}
+

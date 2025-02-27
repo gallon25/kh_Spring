@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="pro">
+<select id="professor_list" resultType="pro" parameterType="String">
+	select p.*
+	from professor p
+	join department d
+ 	on p.dept_idx = d.dept_idx
+	where d.dept_name = #{name}
+</select>
+
+<select id="select_professor" resultType="pro" parameterType="int">
+	select * from professor where pro_idx= #{pro_idx}
+</select>
+
+</mapper>
